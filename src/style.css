@@ -1,0 +1,190 @@
+body {
+  background-image: url("http://drive.google.com/uc?export=view&id=1S062E3z1n7_xNnuPZjxmSeStdJNOH8Fq");
+}
+#bloqueInicio{
+    display : block;
+    text-align: center;
+}
+#bloqueCifrado{
+    display : none;
+    text-align: center;
+}
+#bloqueInformacion{
+    display : none;
+    text-align: center;
+}
+#bloqueEnviado{
+    display : none;
+    text-align: center;
+}
+
+h1{
+    color: #800080;
+    text-align: center;
+    font-size: 35px;
+    font-family: verdana;
+}
+p{
+    color: #1A237E;
+    text-align: center;
+    font-size: 18px;
+    font-family: verdana;
+}
+h2{
+    color: #1A237E;
+    text-align: center;
+    font-size: 22px;
+    font-family: verdana;
+}
+
+h3{
+    color: #800080;
+    text-align: center;
+    font-size: 40px;
+    font-family: verdana;
+}
+
+h4{
+    color: #4682B4;
+    text-align: center;
+    font-size: 40px;
+    font-family: verdana;
+
+}
+
+h5{
+    color: #800080;
+    text-align: center;
+    font-size: 22px;
+    font-family: verdana;
+}
+
+h6{
+    color: #E86F15;
+    text-align: center;
+    font-size: 25px;
+    font-family: verdana;
+}
+
+
+#botonEntrar{
+    font-size:15px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 200px;
+    background-color: white;
+    border-radius: 6px;
+    border: 2px solid #4682B4;
+  }
+
+#botonCifrar{
+    font-size:12px;
+    text-align: center;
+    font-family:verdana;
+    font-weight:bold;
+    padding:8px;
+    border-radius: 6px;
+    border: 2px solid #4682B4;
+
+}
+
+#botonDescifrar{
+    font-size:12px;
+    text-align: center;
+    font-family:verdana;
+    font-weight:bold;
+    padding:8px;
+    border-radius: 6px;
+    border: 2px solid #4682B4;
+}
+
+#botonAyuda{
+    font-size:12px;
+    text-align: center;
+    font-family:verdana;
+    font-weight:bold;
+    padding:5px;
+    border-radius: 6px;
+    border: 2px solid #C45208;
+}
+
+#botonEnviar{
+    font-size:12px;
+    text-align: center;
+    font-family:verdana;
+    font-weight:bold;
+    padding:8px;
+    border-radius: 6px;
+    border: 2px solid #C45208;
+}
+
+#botonVolver{
+    font-size:12px;
+    text-align: center;
+    font-family:verdana;
+    font-weight:bold;
+    padding:8px;
+    border-radius: 6px;
+    border: 2px solid #C45208;
+}
+
+#categoriaA{
+    display : none;
+}
+
+#categoriaB{
+    display : none;
+}
+
+#volverJugar{
+    display : none;
+}
+
+#pregunta1{
+    color: #1A237E;
+    text-align: center;
+}
+
+#pregunta2{
+    display : none;
+    text-align: center;
+    color: #1A237E;
+}
+
+#pregunta3{
+    display : none;
+    text-align: center;
+    color: #1A237E;
+}
+
+#pregunta4{
+    color: #1A237E;
+    text-align: center;
+}
+
+#pregunta5{
+    display : none;
+    color: #1A237E;
+    text-align: center;
+}
+
+#pregunta6{
+   display : none;
+   text-align: center;
+   color: #1A237E;
+}
+
+#resultadostyle{
+    color: #FF3D00;
+    text-align: center;
+    font-size: 25px;
+    font-family: verdana;
+}
+#volverJugar{
+  font-size:10px;
+    text-align:center;
+    font-family:verdana;
+    font-weight:bold;
+    padding:8px;
+    border-radius:6px;
+}
