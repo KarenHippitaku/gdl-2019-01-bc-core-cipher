@@ -2,12 +2,50 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Secretext Cipher</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
+      <a href="http://drive.google.com/uc?export=view&id=12Eh4sFP8gQYlppaZ5_vcSduoFN0EeMEG" target="_blank"><img src="http://drive.google.com/uc?export=view&id=12Eh4sFP8gQYlppaZ5_vcSduoFN0EeMEG"></a>
       <h1>¡Bienvenido!</h1>
+      <p>Aquí podrás codificar y decodificar esos mensajes especiales que quieres proteger, a través del Cifrado César</p>
+      <button onclick="entrar()" id="botonEntrar">Entrar</button>
+    </div>
+
+    <div id="bloqueCifrado">
+      <fieldset>
+        <p>A continuación, ingresa tu mensaje*, agrega el nivel de cifrado y elige si lo quieres cifrar o descifrar</p>
+        <input type="text" id="string">
+        <input type="text" id="offset" size=3>
+        <button onclick="irAyuda()" id="botonAyuda">?</button>
+        <button id="botonCifrar">Cifrar</button>
+        <button id="botonDescifrar">Descifrar</button>
+        <p>*No puede contener letras minúsculas, acentos, números, símbolos ni "ñ"</p>
+
+        <p>Listo, así se ve tu mensaje:</p>
+        <textarea type="text" id="newString"></textarea>
+        <p>Si el resultado no te satisface, has modificaciones en la parte superior Cambia el nivel de cifrado o el mensaje e intenta de nuevo</p>
+      </fieldset>
+        <p>¿Quieres recibir el resultado en tu correo o enviárselo a tu cómplice?</p>
+        <input type="text" id="email" value="correo@ejemplo.com">
+        <button onclick="enviar()" id="botonEnviar">Enviar</button>
+    </div>
+
+    <div id="bloqueInformacion">
+     <a href="http://drive.google.com/uc?export=view&id=12Eh4sFP8gQYlppaZ5_vcSduoFN0EeMEG" target="_blank"><img src="http://drive.google.com/uc?export=view&id=iconoInformacion-pendiente.png"></a>
+      <h2>Información</h2>
+      <h3>¿Qué es el nivel de cifrado u offset?</h3>
+      <p>¿Qué es el nivel de cifrado u offset?</p>
+      <h4>¿Qué necesito para descifrar un mensaje?</h4>
+      <p>¿Qué es el nivel de cifrado u offset?</p>
+      <button onclick="salir()" id="botonSalir">Salir</button>
+    </div>
+
+    <div id="bloqueEnviado">
+     <h5>¡Listo!</h5>
+      <p>El mensaje secreto ha sido enviado</p>
+      <button onclick="volverACifrar()" id="botonVolver">Volver a cifrar</button>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
