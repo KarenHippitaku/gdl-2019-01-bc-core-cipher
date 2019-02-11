@@ -12,7 +12,7 @@ block{
 .image{
   align-content: center;
   padding: 10px;
-  display: inline-block;
+  display: block;
 
 }
 #blockStart{
