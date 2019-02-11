@@ -6,46 +6,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div id="bloqueInicio">
-      <a href="http://drive.google.com/uc?export=view&id=12Eh4sFP8gQYlppaZ5_vcSduoFN0EeMEG" target="_blank"><img src="http://drive.google.com/uc?export=view&id=12Eh4sFP8gQYlppaZ5_vcSduoFN0EeMEG"></a>
-      <h1>¡Bienvenido!</h1>
-      <p>Aquí podrás codificar y decodificar <br> esos mensajes súper secretos que quieres proteger <br> para compartirlos sólo con tus cómplices especiales <br> a través del Cifrado César</p>
-      <button id="botonEntrar" type="submit">Entrar</button>
+    <div id="blockStart">
+      <a class="image" href="http://drive.google.com/uc?export=view&id=1LQHYr1mJwvnARdmk1yfWazvyVLyGq6AA" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1LQHYr1mJwvnARdmk1yfWazvyVLyGq6AA"></a>
+      <h1>¡Bienvenida(o)!</h1>
+      <p>Aquí podrás codificar y decodificar esos mensajes súper secretos <br>
+        que quieras proteger de los chismosos, a través del Cifrado César, <br>
+        para que nadie que no sea tu cómplice se pueda enterar ;)</p>
+      <button id="buttonEnter" type="submit">Entrar</button>
+      <a class="image" href="http://drive.google.com/uc?export=view&id=13zPfsq-SqPBUdEmazPnFAOLLHdEWpDt9" target="_blank"><img src="http://drive.google.com/uc?export=view&id=13zPfsq-SqPBUdEmazPnFAOLLHdEWpDt9"></a>
     </div>
 
-    <div id="bloqueCifrado">
+    <div id="blockCipher">
         <p>A continuación, ingresa tu mensaje*, agrega el nivel de cifrado y elige si lo quieres cifrar o descifrar</p>
         <input type="text" id="string" placeholder="TU MENSAJE">
         <input type="number" id="offset" placeholder="0">
-        <button id="botonAyuda" type="submit">?</button>
-        <button id="botonCifrar" type="submit">Cifrar</button>
-        <button id="botonDescifrar" type="submit">Descifrar</button>
-        <p>*No puede contener letras minúsculas, acentos, números, símbolos ni "ñ"</p>
+        <button id="buttonHelp" type="submit">?</button>
+        <button id="buttonCipher" type="submit">Cifrar</button>
+        <button id="buttonDecipher" type="submit">Descifrar</button>
+        <p1>*No puede contener letras minúsculas, acentos, números, símbolos ni "ñ"</p1>
 
         <p>Listo, así se ve tu mensaje:</p>
         <textarea type="text" id="newString" placeholder="ESTE ES TU MENSAJE SECRETO"></textarea>
         <p>Si el resultado no te satisface, has modificaciones en la parte superior, <br> cambia el nivel de cifrado o el mensaje, e intenta de nuevo</p>
-        <p>¿Quieres recibir el resultado en tu correo o enviárselo a tu cómplice?</p>
-        <input type="text" id="email" placeholder=""="tucorreo@ejemplo.com">
-        <button id="botonEnviar" type="submit">Enviar</button>
+        <p>¿Quieres enviarle resultado a tu cómplice?</p>
+        <input type="text" id="email" placeholder="tucorreo@ejemplo.com">
+        <button id="buttonSend" type="submit">Enviar</button>
+        <button id="buttonNotSend" type="submit">No gracias</button>
     </div>
 
-    <div id="bloqueInformacion">
+    <div id="blockInfo">
       <fieldset>
-        <a href="http://drive.google.com/uc?export=view&id=12Eh4sFP8gQYlppaZ5_vcSduoFN0EeMEG" target="_blank"><img src="http://drive.google.com/uc?export=view&id=iconoInformacion-pendiente.png"></a>
+        <a class="image" href="http://drive.google.com/uc?export=view&id=1NFwrPZffcb0gHe4EGLBv302nduJiEo6e" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1NFwrPZffcb0gHe4EGLBv302nduJiEo6e"></a>
           <h2>Información</h2>
           <h3>¿Qué es el nivel de cifrado u offset?</h3>
-          <p>¿Qué es el nivel de cifrado u offset?</p>
+          <p2>El cifrado césar es una de las técnicas más simples para cifrar un mensaje.<br>
+            Es un tipo de cifrado por sustitución, es decir que cada letra del texto original <br>
+            es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) <br>
+            más adelante en el mismo alfabeto. A este desplazamiento se le llama offset.</p2>
           <h4>¿Qué necesito para descifrar un mensaje?</h4>
-          <p>¿Qué es el nivel de cifrado u offset?</p>
-          <button id="botonSalir" type="submit">Salir</button>
+          <p2>Al elegir un offset o nivel de cifrado, este indica cuántas posiciones queremos <br>
+            que el cifrado desplace cada letra del mensaje. Entonces, si envías tu mensaje secreto <br>
+            pero no le dices a tu cómplice el número de offset, no podrá decifrarlo.</p2>
+          <button id="buttonExit" type="submit">Salir</button>
       </fieldset>
     </div>
 
-    <div id="bloqueEnviado">
+    <div id="blockSend">
      <h5>¡Listo!</h5>
-      <p>Tu súper secreto, ha sido enviado</p>
-      <button id="botonVolver" type="submit">Volver a cifrar</button>
+      <p2>Tu súper secreto, ha sido enviado</p2>
+      <button id="buttonReturn" type="submit">Volver a cifrar</button>
+      <a class="image" href="http://drive.google.com/uc?export=view&id=1BZbRPx_3pFOqTGCkiu34AHhmIxb9_if2" target="_blank"><img src="http://drive.google.com/uc?export=view&id=1BZbRPx_3pFOqTGCkiu34AHhmIxb9_if2"></a>
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>

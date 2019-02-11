@@ -13,7 +13,7 @@ encode: (offset, string) => {
 
    //Si el valor de desplazamiento es mayor a 26, agarro el residuo
    //para que empiece nuevamente el abecedario
-   if(offset > 26){
+   while (offset > 26){
      offset = offset % 26;
    }
 
@@ -47,7 +47,7 @@ return output;
 
    //Si el valor de desplazamiento es mayor a 26, agarro el residuo
    //para que empiece nuevamente el abecedario
-   if(offset > 26){
+   while (offset > 26){
      offset = offset % 26;
    }
 

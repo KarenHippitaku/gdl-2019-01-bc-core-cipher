@@ -1,26 +1,26 @@
-function entrar(){
-    document.getElementById("bloqueInicio").style.display = "none";
-    document.getElementById("bloqueCifrado").style.display = "block";
-    document.getElementById("bloqueInformacion").style.display = "none";
-    document.getElementById("bloqueEnviado").style.display = "none";
+function enter(){
+    document.getElementById("blockStart").style.display = "none";
+    document.getElementById("blockCipher").style.display = "block";
+    document.getElementById("blockInfo").style.display = "none";
+    document.getElementById("blockSend").style.display = "none";
   }
-  document.getElementById("botonEntrar").addEventListener("click", entrar);
+  document.getElementById("buttonEnter").addEventListener("click", enter);
 
-function irAyuda(){
-  document.getElementById("bloqueInicio").style.display = "none";
-  document.getElementById("bloqueCifrado").style.display = "none";
-  document.getElementById("bloqueInformacion").style.display = "block";
-  document.getElementById("bloqueEnviado").style.display = "none";
+function help(){
+  document.getElementById("blockStart").style.display = "none";
+  document.getElementById("blockCipher").style.display = "none";
+  document.getElementById("blockInfo").style.display = "block";
+  document.getElementById("blockSend").style.display = "none";
   }
-  document.getElementById("botonAyuda").addEventListener("click", irAyuda);
+  document.getElementById("buttonHelp").addEventListener("click", help);
 
-function salir(){
-    document.getElementById("bloqueInicio").style.display = "none";
-    document.getElementById("bloqueCifrado").style.display = "block";
-    document.getElementById("bloqueInformacion").style.display = "none";
-    document.getElementById("bloqueEnviado").style.display = "none";
+function exit(){
+    document.getElementById("blockStart").style.display = "none";
+    document.getElementById("blockCipher").style.display = "block";
+    document.getElementById("blockInfo").style.display = "none";
+    document.getElementById("blockSend").style.display = "none";
   }
-  document.getElementById("botonSalir").addEventListener("click", salir);
+  document.getElementById("buttonExit").addEventListener("click", exit);
 
 function encode(){
     let string = document.getElementById("string").value;
@@ -28,7 +28,7 @@ function encode(){
     let output = window.cipher.encode(offset, string);
     document.getElementById("newString").innerHTML = output;
   }
-  document.getElementById("botonCifrar").addEventListener("click",encode);
+  document.getElementById("buttonCipher").addEventListener("click",encode);
 
 function decode(){
   let string = document.getElementById("string").value;
@@ -36,20 +36,35 @@ function decode(){
   let output = window.cipher.decode(offset, string);
   document.getElementById("newString").innerHTML = output;
 }
-document.getElementById("botonDescifrar").addEventListener("click",decode);
+document.getElementById("buttonDecipher").addEventListener("click",decode);
 
-function enviar(){
-  document.getElementById("bloqueInicio").style.display = "none";
-  document.getElementById("bloqueCifrado").style.display = "none";
-  document.getElementById("bloqueInformacion").style.display = "none";
-  document.getElementById("bloqueEnviado").style.display = "block";
-  }
-  document.getElementById("botonEnviar").addEventListener("click", enviar);
+function send(){
+  let mailTo = document.getElementById("email").value;
+  let newString = document.getElementById("newString").value;
+  let offset = document.getElementById("offset").value;
+  let subject = "Secretext";
+  let body = "Este es tu secreto " + newString + " y este tu nivel de cifrado " + offset + ", lo necesitarás para seguir revelando secretos en www.secretextcipher.com";
+  window.open(`mailto:${mailTo}?subject=${subject}&body=${body}`);
 
-function volverACifrar(){
-  document.getElementById("bloqueInicio").style.display = "none";
-  document.getElementById("bloqueCifrado").style.display = "block";
-  document.getElementById("bloqueInformacion").style.display = "none";
-  document.getElementById("bloqueEnviado").style.display = "none";
+  document.getElementById("blockStart").style.display = "none";
+  document.getElementById("blockCipher").style.display = "none";
+  document.getElementById("blockInfo").style.display = "none";
+  document.getElementById("blockSend").style.display = "block";
   }
-  document.getElementById("botonVolver").addEventListener("click", volverACifrar);
+  document.getElementById("buttonSend").addEventListener("click", send);
+
+function backToCipher(){
+  document.getElementById("blockStart").style.display = "none";
+  document.getElementById("blockCipher").style.display = "block";
+  document.getElementById("blockInfo").style.display = "none";
+  document.getElementById("blockSend").style.display = "none";
+  }
+  document.getElementById("buttonReturn").addEventListener("click", backToCipher);
+
+function backToStart(){
+  document.getElementById("blockStart").style.display = "block";
+  document.getElementById("blockCipher").style.display = "none";
+  document.getElementById("blockInfo").style.display = "none";
+  document.getElementById("blockSend").style.display = "none";
+  }
+  document.getElementById("buttonNotSend").addEventListener("click", backToStart);
